@@ -4,9 +4,6 @@ import 'package:flutter/material.dart';
 // base theme
 final baseTheme = ThemeData.light();
 
-const outlineInputBorderBase =
-    UnderlineInputBorder(borderSide: BorderSide.none);
-
 // app theme
 final ThemeData appTheme = baseTheme.copyWith(
   scaffoldBackgroundColor: appColors.scaffoldColor,
@@ -16,15 +13,15 @@ final ThemeData appTheme = baseTheme.copyWith(
   inputDecorationTheme: baseTheme.inputDecorationTheme.copyWith(
     contentPadding: EdgeInsets.zero,
     floatingLabelBehavior: FloatingLabelBehavior.auto,
-    border: outlineInputBorderBase,
-    focusedBorder: outlineInputBorderBase,
-    enabledBorder: outlineInputBorderBase,
+    labelStyle: TextStyle(
+      color: appColors.white,
+      fontSize: 18.sp,
+      fontWeight: FontWeight.w800,
+    ),
+    filled: true,
+    fillColor: appColors.grey.withOpacity(0.3),
     errorStyle:
         TextStyle(height: 0, fontWeight: FontWeight.normal, fontSize: 15.sp),
-    labelStyle: TextStyle(
-        color: appColors.inputFieldTextColor,
-        fontSize: 14,
-        fontWeight: FontWeight.w400),
     hintStyle: TextStyle(
         color: appColors.inputFieldTextColor,
         fontSize: 16.sp,
@@ -61,7 +58,7 @@ var appColors = AppColors();
 class AppColors {
   Color yellow = const Color(0xFFFCC21B);
   Color green = const Color(0xFF0D6464);
-  Color grey = const Color(0xff343434);
+  Color grey = const Color(0xff606060);
   Color barrierColor = const Color(0X8010031C);
   Color backGroundColor = const Color(0xffE5E5E5);
   Color inputFieldBorderColor = const Color(0xFF898989);
