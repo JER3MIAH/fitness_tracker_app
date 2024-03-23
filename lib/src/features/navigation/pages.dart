@@ -1,3 +1,4 @@
+import 'package:fitness_tracker_app/src/features/auth/presentation/screens/login_signup_screen.dart';
 import 'package:fitness_tracker_app/src/features/navigation/routes.dart';
 import 'package:fitness_tracker_app/src/features/splash/splash_screen.dart';
 import 'package:flutter/material.dart';
@@ -26,36 +27,12 @@ class AppPages {
 
 //*-------------------------------Auth Routes---------------------------------------------
 List<GetPage> authPages = [
-  // GetPage(
-  //   name: AuthRoutes.onboarding,
-  //   page: () => const OnboardingScreen(),
-  //   transition: Transition.native,
-  //   transitionDuration: const Duration(milliseconds: 500),
-  // ),
-  // GetPage(
-  //   name: AuthRoutes.login,
-  //   page: () => const LoginView(),
-  //   transition: Transition.native,
-  //   transitionDuration: const Duration(milliseconds: 500),
-  // ),
-  // GetPage(
-  //   name: AuthRoutes.signUp,
-  //   page: () => const SignUpView(),
-  //   transition: Transition.native,
-  //   transitionDuration: const Duration(milliseconds: 500),
-  // ),
-  //  GetPage(
-  //   name: AuthRoutes.otpVerification,
-  //   page: () => const OtpVerificationView(),
-  //   transition: Transition.native,
-  //   transitionDuration: const Duration(milliseconds: 500),
-  // ),
-  // GetPage(
-  //   name: AuthRoutes.forgotPassword,
-  //   page: () => const ForgotPasswordView(),
-  //   transition: Transition.native,
-  //   transitionDuration: const Duration(milliseconds: 500),
-  // ),
+  GetPage(
+    name: AuthRoutes.loginOrSignUp,
+    page: () => const LoginSignUpScreen(),
+    transition: Transition.native,
+    transitionDuration: const Duration(milliseconds: 500),
+  ),
 ];
 
 //*-------------------------------Home Routes---------------------------------------------

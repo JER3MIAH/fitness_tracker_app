@@ -1,7 +1,6 @@
 export 'assets.dart';
 export 'dimensions.dart';
 export 'app_fonts.dart';
-export 'strings.dart';
 export '../theme/app_theme.dart';
 export 'validators.dart';
 export 'string_utils.dart';

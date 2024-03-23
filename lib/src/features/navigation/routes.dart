@@ -3,17 +3,17 @@ class SplashRoute {
 }
 
 class AuthRoutes {
-  static const onboarding = '/onboardingView';
-  static const register = '/registerView';
-  static const login = '/loginView';
-  static const signUp = '/signUpView';
-  static const address = '/addressView';
-  static const forgotPassword = '/forgotPasswordView';
-  static const otpVerification = '/otpVerificationView';
+  static const onboarding = '/onboardingScreen';
+  static const loginOrSignUp = '/loginOrSignUpScreen';
+  static const login = '/loginScreen';
+  static const signUp = '/signUpScreen';
+  static const address = '/addressScreen';
+  static const forgotPassword = '/forgotPasswordScreen';
+  static const otpVerification = '/otpVerificationScreen';
 }
 
 class HomeRoutes {
-  static const home = '/homeView';
+  static const home = '/homeScreen';
 }
 
 class OrdersRoutes {}

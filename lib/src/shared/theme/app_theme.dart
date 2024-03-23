@@ -11,11 +11,6 @@ const outlineInputBorderBase =
 final ThemeData appTheme = baseTheme.copyWith(
   scaffoldBackgroundColor: appColors.scaffoldColor,
   primaryColor: appColors.green,
-  progressIndicatorTheme: ProgressIndicatorThemeData(
-    linearTrackColor: appColors.green.withOpacity(.1),
-    circularTrackColor: appColors.green.withOpacity(.1),
-    color: appColors.green,
-  ),
   dividerColor: appColors.green.withOpacity(.5),
   brightness: Brightness.light,
   inputDecorationTheme: baseTheme.inputDecorationTheme.copyWith(
@@ -46,7 +41,6 @@ final ThemeData appTheme = baseTheme.copyWith(
         ),
       )
       .apply(
-        fontFamily: kNunito,
         bodyColor: appColors.black,
       ),
   colorScheme: baseTheme.colorScheme

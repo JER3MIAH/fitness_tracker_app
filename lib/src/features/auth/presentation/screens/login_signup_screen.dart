@@ -1,36 +1,9 @@
-import 'package:fitness_tracker_app/src/features/navigation/nav.dart';
-import 'package:fitness_tracker_app/src/features/navigation/routes.dart';
 import 'package:fitness_tracker_app/src/shared/shared.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
-import 'package:flutter_svg/svg.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
-class SplashScreen extends StatefulWidget {
-  const SplashScreen({super.key});
-
-  @override
-  State<SplashScreen> createState() => _SplashScreenState();
-}
-
-class _SplashScreenState extends State<SplashScreen>
-    with TickerProviderStateMixin {
-  @override
-  void initState() {
-    super.initState();
-    SystemChrome.setEnabledSystemUIMode(SystemUiMode.immersive);
-    Future.delayed(const Duration(seconds: 3), () {
-      AppNavigator.replaceNamed(AuthRoutes.loginOrSignUp);
-    });
-  }
-
-  @override
-  void dispose() {
-    SystemChrome.setEnabledSystemUIMode(
-      SystemUiMode.manual,
-      overlays: SystemUiOverlay.values,
-    );
-    super.dispose();
-  }
+class LoginSignUpScreen extends StatelessWidget {
+  const LoginSignUpScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
