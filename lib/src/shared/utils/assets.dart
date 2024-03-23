@@ -19,3 +19,6 @@ final String splashImage = 'splash-bg'.jpg;
 
 //? SVGS
 final String shoeIcon = 'shoe-icon'.svg;
+final String appleIcon = 'apple-icon'.svg;
+final String googleIcon = 'google-icon'.svg;
+final String facebookIcon = 'facebook-icon'.svg;

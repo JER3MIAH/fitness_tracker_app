@@ -22,16 +22,21 @@ class AppButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final theme = Theme.of(context).colorScheme;
     return BounceInAnimation(
       child: ElevatedButton(
         onPressed: onTap,
         style: ElevatedButton.styleFrom(
           padding: EdgeInsets.symmetric(vertical: 10.dy),
-          minimumSize: buttonSize ?? const Size(double.infinity, 60),
+          minimumSize: buttonSize ??
+              Size(
+                double.infinity,
+                56.72.dy,
+              ),
           shape: RoundedRectangleBorder(
-            borderRadius: borderRadius ?? BorderRadius.circular(10),
+            borderRadius: borderRadius ?? BorderRadius.circular(25),
           ),
-          backgroundColor: buttonColor ?? appColors.green,
+          backgroundColor: buttonColor ?? theme.primary,
         ),
         child: isLoading
             ? CircularProgressIndicator.adaptive(
@@ -39,11 +44,7 @@ class AppButton extends StatelessWidget {
               )
             : Text(
                 title,
-                style: textStyle ??
-                    Theme.of(context)
-                        .textTheme
-                        .bodyLarge!
-                        .copyWith(color: appColors.white),
+                style: textStyle ?? Theme.of(context).textTheme.bodyMedium,
               ),
       ),
     );
@@ -55,7 +56,7 @@ class AppOutlinedButton extends StatelessWidget {
   final VoidCallback? onTap;
   final Color? overlayColor;
   final Color? borderSideColor, textColor;
-  final double height;
+  final double? height;
   final BorderRadius? borderRadius;
   const AppOutlinedButton({
     super.key,
@@ -63,33 +64,34 @@ class AppOutlinedButton extends StatelessWidget {
     this.onTap,
     this.overlayColor,
     this.borderSideColor,
-    this.height = 60,
+    this.height,
     this.borderRadius,
     this.textColor,
   });
 
   @override
   Widget build(BuildContext context) {
+    final theme = Theme.of(context).colorScheme;
     return ClipRRect(
-      borderRadius: BorderRadius.circular(12),
+      borderRadius: BorderRadius.circular(25),
       child: SizedBox(
         width: Dims.deviceSize.width,
-        height: height,
+        height: height ?? 56.72.dy,
         child: OutlinedButton(
           style: ButtonStyle(
             padding: MaterialStatePropertyAll(
                 EdgeInsets.symmetric(vertical: 12..dy)),
             overlayColor: MaterialStatePropertyAll(
-                overlayColor ?? appColors.error.withOpacity(0.4)),
+                overlayColor ?? theme.primary.withOpacity(0.4)),
             shape: MaterialStateProperty.all<RoundedRectangleBorder>(
               RoundedRectangleBorder(
                 borderRadius: borderRadius ??
-                    BorderRadius.circular(10), // Adjust the radius as needed
+                    BorderRadius.circular(25), // Adjust the radius as needed
               ),
             ),
             side: MaterialStatePropertyAll(
               BorderSide(
-                color: borderSideColor ?? appColors.error,
+                color: borderSideColor ?? theme.primary,
               ),
             ),
           ),
@@ -97,9 +99,9 @@ class AppOutlinedButton extends StatelessWidget {
           child: Text(
             text,
             style: TextStyle(
-              fontSize: 16..sp,
+              fontSize: 16.sp,
               fontWeight: FontWeight.w400,
-              color: textColor ?? appColors.error,
+              color: textColor ?? appColors.white,
             ),
           ),
         ),

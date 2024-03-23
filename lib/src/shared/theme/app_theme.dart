@@ -10,8 +10,8 @@ const outlineInputBorderBase =
 // app theme
 final ThemeData appTheme = baseTheme.copyWith(
   scaffoldBackgroundColor: appColors.scaffoldColor,
-  primaryColor: appColors.green,
-  dividerColor: appColors.green.withOpacity(.5),
+  primaryColor: appColors.yellow,
+  dividerColor: appColors.yellow.withOpacity(.5),
   brightness: Brightness.light,
   inputDecorationTheme: baseTheme.inputDecorationTheme.copyWith(
     contentPadding: EdgeInsets.zero,
@@ -36,8 +36,10 @@ final ThemeData appTheme = baseTheme.copyWith(
           fontSize: 25.sp,
           fontWeight: FontWeight.w700,
         ),
-        displayMedium: TextStyle(
-          fontSize: 18.sp,
+        bodyMedium: TextStyle(
+          fontWeight: FontWeight.w600,
+          fontSize: 16.sp,
+          color: appColors.black,
         ),
       )
       .apply(
@@ -45,9 +47,8 @@ final ThemeData appTheme = baseTheme.copyWith(
       ),
   colorScheme: baseTheme.colorScheme
       .copyWith(
-        onPrimary: appColors.green.withOpacity(0.6),
-        primary: appColors.green,
-        secondary: appColors.grey.withOpacity(0.3),
+        primary: appColors.yellow,
+        secondary: appColors.green,
         error: appColors.error,
         onError: appColors.error.withOpacity(0.42),
         background: appColors.white,
@@ -58,8 +59,8 @@ final ThemeData appTheme = baseTheme.copyWith(
 var appColors = AppColors();
 
 class AppColors {
-  Color green = const Color(0xFF004F2D);
-  Color orange = const Color(0xFFE97000);
+  Color yellow = const Color(0xFFFCC21B);
+  Color green = const Color(0xFF0D6464);
   Color grey = const Color(0xff343434);
   Color barrierColor = const Color(0X8010031C);
   Color backGroundColor = const Color(0xffE5E5E5);

@@ -18,7 +18,7 @@ class DateWidget extends StatelessWidget {
       width: 48.68.dx,
       margin: EdgeInsets.only(right: 8.dx),
       decoration: BoxDecoration(
-        color: selected ? appColors.green : null,
+        color: selected ? appColors.yellow : null,
         borderRadius: BorderRadius.circular(15.dy),
         border: Border.all(
           color: appColors.grey80.withOpacity(0.3),
