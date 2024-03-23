@@ -2,6 +2,7 @@ import 'package:fitness_tracker_app/src/features/auth/presentation/screens/login
 import 'package:fitness_tracker_app/src/features/auth/presentation/screens/login_signup_screen.dart';
 import 'package:fitness_tracker_app/src/features/auth/presentation/screens/signup_screen.dart';
 import 'package:fitness_tracker_app/src/features/navigation/routes.dart';
+import 'package:fitness_tracker_app/src/features/onboarding/presentation/screens/onboarding_screen.dart';
 import 'package:fitness_tracker_app/src/features/splash/splash_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -38,13 +39,19 @@ List<GetPage> authPages = [
   GetPage(
     name: AuthRoutes.login,
     page: () => const LoginScreen(),
-    transition: Transition.rightToLeftWithFade,
+    transition: Transition.leftToRightWithFade,
     transitionDuration: const Duration(milliseconds: 500),
   ),
   GetPage(
     name: AuthRoutes.signUp,
     page: () => const SignUpScreen(),
-    transition: Transition.rightToLeftWithFade,
+    transition: Transition.leftToRightWithFade,
+    transitionDuration: const Duration(milliseconds: 500),
+  ),
+  GetPage(
+    name: AuthRoutes.onboarding,
+    page: () => const OnboardingScreen(),
+    transition: Transition.rightToLeft,
     transitionDuration: const Duration(milliseconds: 500),
   ),
 ];

@@ -22,3 +22,8 @@ final String shoeIcon = 'shoe-icon'.svg;
 final String appleIcon = 'apple-icon'.svg;
 final String googleIcon = 'google-icon'.svg;
 final String facebookIcon = 'facebook-icon'.svg;
+final String trophyIcon = 'trophy-icon'.svg;
+final String sparkleEffect = 'sparkle-effect'.svg;
+
+//? PNGS
+final String sparkleEffectSmall = 'sparkle-effect-small'.png;

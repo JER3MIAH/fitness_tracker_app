@@ -24,28 +24,30 @@ class AppButton extends StatelessWidget {
   Widget build(BuildContext context) {
     final theme = Theme.of(context).colorScheme;
     return BounceInAnimation(
-      child: ElevatedButton(
-        onPressed: onTap,
-        style: ElevatedButton.styleFrom(
+      child: GestureDetector(
+        onTap: onTap,
+        child: Container(
+          height: 56.72.dy,
+          width: double.infinity,
           padding: EdgeInsets.symmetric(vertical: 10.dy),
-          minimumSize: buttonSize ??
-              Size(
-                double.infinity,
-                56.72.dy,
-              ),
-          shape: RoundedRectangleBorder(
-            borderRadius: borderRadius ?? BorderRadius.circular(25),
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(25),
+            color: buttonColor ?? theme.primary,
+            image: DecorationImage(
+              image: AssetImage(sparkleEffectSmall),
+            ),
           ),
-          backgroundColor: buttonColor ?? theme.primary,
+          child: Center(
+            child: isLoading
+                ? CircularProgressIndicator.adaptive(
+                    backgroundColor: appColors.white,
+                  )
+                : Text(
+                    title,
+                    style: textStyle ?? Theme.of(context).textTheme.bodyMedium,
+                  ),
+          ),
         ),
-        child: isLoading
-            ? CircularProgressIndicator.adaptive(
-                backgroundColor: appColors.white,
-              )
-            : Text(
-                title,
-                style: textStyle ?? Theme.of(context).textTheme.bodyMedium,
-              ),
       ),
     );
   }
