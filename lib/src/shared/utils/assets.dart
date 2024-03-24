@@ -24,6 +24,9 @@ final String googleIcon = 'google-icon'.svg;
 final String facebookIcon = 'facebook-icon'.svg;
 final String trophyIcon = 'trophy-icon'.svg;
 final String sparkleEffect = 'sparkle-effect'.svg;
+final String arrowLeft = 'arrow-left'.svg;
+final String arrowRight = 'arrow-right'.svg;
+final String arrowDown = 'arrow-down'.svg;
 
 //? PNGS
 final String sparkleEffectSmall = 'sparkle-effect-small'.png;

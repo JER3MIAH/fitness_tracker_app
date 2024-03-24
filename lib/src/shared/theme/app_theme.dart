@@ -59,7 +59,6 @@ class AppColors {
   Color yellow = const Color(0xFFFCC21B);
   Color green = const Color(0xFF0D6464);
   Color grey = const Color(0xff606060);
-  Color barrierColor = const Color(0X8010031C);
   Color backGroundColor = const Color(0xffE5E5E5);
   Color inputFieldBorderColor = const Color(0xFF898989);
   Color inputFieldTextColor = const Color(0xFF898989);
