@@ -1,8 +1,11 @@
+import 'package:fitness_tracker_app/src/features/onboarding/presentation/screens/widgets/custom_tile.dart';
 import 'package:fitness_tracker_app/src/features/onboarding/presentation/screens/widgets/top_container.dart';
+import 'package:fitness_tracker_app/src/features/onboarding/presentation/view_models/onboarding_viewmodel.dart';
 import 'package:fitness_tracker_app/src/shared/shared.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-class FifthView extends StatelessWidget {
+class FifthView extends ConsumerWidget {
   final int currentPage;
   final PageController pageController;
   const FifthView({
@@ -12,7 +15,11 @@ class FifthView extends StatelessWidget {
   });
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, ref) {
+    final workoutGoals = ref.watch(onboardingProvider).workoutGoals;
+    final selectedWorkoutGoals =
+        ref.watch(onboardingProvider).selectedWorkoutGoals;
+
     return Column(
       children: [
         TopContainer(
@@ -20,6 +27,22 @@ class FifthView extends StatelessWidget {
           pageController: pageController,
         ),
         YBox(70.dy),
+        AppColumn(
+          padding: EdgeInsets.symmetric(horizontal: 30.dx),
+          children: List.generate(
+            workoutGoals.length,
+            (index) => CustomTile(
+              text: workoutGoals[index],
+              isSelected: selectedWorkoutGoals.contains(workoutGoals[index]),
+              onTap: () {
+                ref
+                    .read(onboardingProvider.notifier)
+                    .selectWorkoutGoal(workoutGoals[index]);
+                print(selectedWorkoutGoals);
+              },
+            ),
+          ),
+        ),
       ],
     );
   }

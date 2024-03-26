@@ -56,7 +56,7 @@ class TopContainer extends StatelessWidget {
                         pageController.previousPage(
                             duration: const Duration(milliseconds: 600),
                             curve: Curves.ease);
-                        print(currentPage);
+                        // print(currentPage);
                       },
                       child: Padding(
                         padding: EdgeInsets.symmetric(horizontal: 15.dx),
@@ -97,7 +97,7 @@ class TopContainer extends StatelessWidget {
                               : currentPage == 4
                                   ? '    You can select more than one\n     you can also make changes later'
                                   : currentPage == 5
-                                      ? 'You can select more than one\nyou can also make changes later'
+                                      ? 'You can select only one\nyou can also make changes later'
                                       : currentPage == 6
                                           ? '     Weldon! you have earned your\n    first move mint'
                                           : '',
