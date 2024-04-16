@@ -97,7 +97,7 @@ class OnboardingScreen extends HookWidget {
                   onTap: () {
                     pageController.nextPage(
                         duration: const Duration(milliseconds: 600),
-                        curve: Curves.easeInOutBack);
+                        curve: Curves.linear);
                   },
                 ),
               ),

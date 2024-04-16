@@ -27,7 +27,7 @@ class FirstView extends StatelessWidget {
     );
   }
 
-  Widget _buildGenderContainer(bool isMale) {
+  Widget _buildGenderContainer(bool isMale, {bool isSelected = false}) {
     return Column(
       children: [
         Container(
@@ -37,6 +37,7 @@ class FirstView extends StatelessWidget {
           decoration: BoxDecoration(
             color: appColors.white,
             borderRadius: BorderRadius.circular(11),
+            border: isSelected ? Border.all(color: appColors.green) : null,
           ),
           child: Icon(
             isMale ? Icons.male : Icons.female,
