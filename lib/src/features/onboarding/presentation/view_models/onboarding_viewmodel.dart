@@ -1,3 +1,4 @@
+import 'package:fitness_tracker_app/src/shared/utils/utils.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
@@ -6,6 +7,7 @@ final onboardingProvider = ChangeNotifierProvider((ref) {
 });
 
 class OnboardingViewModel extends ChangeNotifier {
+  Gender gender = Gender.male;
   List<String> ageRanges = ['18 - 22', '23 - 29', '30 - 35', '36 - 40'];
   List<String> weightRanges = [
     '50 - 59 kg',
@@ -39,6 +41,15 @@ class OnboardingViewModel extends ChangeNotifier {
   String heightRange = '';
   String fitnessLevel = '';
   List<String> selectedWorkoutGoals = [];
+
+  void selectGender(bool isMale) {
+    if (isMale) {
+      gender = Gender.male;
+    } else {
+      gender = Gender.female;
+    }
+    notifyListeners();
+  }
 
   void selectAgeRange(String selectedAgeRange) {
     ageRange = selectedAgeRange;
