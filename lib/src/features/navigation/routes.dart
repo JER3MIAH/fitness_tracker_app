@@ -13,7 +13,7 @@ class AuthRoutes {
 }
 
 class HomeRoutes {
-  static const home = '/homeScreen';
+  static const main = '/mainView';
 }
 
 class OrdersRoutes {}

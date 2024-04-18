@@ -52,7 +52,7 @@ class LoginScreen extends StatelessWidget {
               AppButton(
                 title: 'Continue',
                 onTap: () {
-                  AppNavigator.pushNamed(AuthRoutes.onboarding);
+                  AppNavigator.pushNamed(HomeRoutes.main);
                 },
               ),
               YBox(74.dy),

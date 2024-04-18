@@ -1,3 +1,5 @@
+import 'package:fitness_tracker_app/src/features/navigation/app_navigator.dart';
+import 'package:fitness_tracker_app/src/features/navigation/routes.dart';
 import 'package:fitness_tracker_app/src/shared/shared.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
@@ -95,9 +97,13 @@ class OnboardingScreen extends HookWidget {
                 child: AppButton(
                   title: 'Continue',
                   onTap: () {
-                    pageController.nextPage(
-                        duration: const Duration(milliseconds: 600),
-                        curve: Curves.linear);
+                    if (currentPage.value == 6) {
+                      AppNavigator.pushNamed(HomeRoutes.main);
+                    } else {
+                      pageController.nextPage(
+                          duration: const Duration(milliseconds: 600),
+                          curve: Curves.linear);
+                    }
                   },
                 ),
               ),
