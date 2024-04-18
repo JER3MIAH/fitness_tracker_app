@@ -28,5 +28,13 @@ final String arrowLeft = 'arrow-left'.svg;
 final String arrowRight = 'arrow-right'.svg;
 final String arrowDown = 'arrow-down'.svg;
 
+final String homeOutlined = 'home-outlined'.svg;
+final String homeFilled = 'home-filled'.svg;
+final String exploreOutlined = 'explore-outlined'.svg;
+final String exploreFilled = 'explore-filled'.svg;
+final String statsOutlined = 'stats-outlined'.svg;
+final String statsFilled = 'stats-filled'.svg;
+final String settingsOutlined = 'settings-outlined'.svg;
+final String settingsFilled = 'settings-filled'.svg;
 //? PNGS
 final String sparkleEffectSmall = 'sparkle-effect-small'.png;
