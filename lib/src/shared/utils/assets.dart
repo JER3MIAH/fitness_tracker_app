@@ -41,6 +41,9 @@ final String drawerIcon = 'drawer-icon'.svg;
 final String globeIcon = 'globe-icon'.svg;
 final String watchIcon = 'watch-icon'.svg;
 final String themeIcon = 'theme-icon'.svg;
+//Explore
+final String selector = 'selector'.svg;
+final String calendarIcon = 'calendar-icon'.svg;
 
 //? PNGS
 final String sparkleEffectSmall = 'sparkle-effect-small'.png;

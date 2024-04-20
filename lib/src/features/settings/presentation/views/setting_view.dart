@@ -174,30 +174,28 @@ class SettingsTile extends StatelessWidget {
       alignment: Alignment.center,
       margin: EdgeInsets.symmetric(horizontal: 15.dx).copyWith(bottom: 15.dy),
       height: 79.dy,
-      child: Expanded(
-        child: ListTile(
-          onTap: onTap,
-          leading: SvgAsset(assetName: leadingIcon),
-          titleAlignment: ListTileTitleAlignment.center,
-          contentPadding: EdgeInsets.symmetric(horizontal: 15.dx),
-          tileColor: appColors.white,
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(18),
-          ),
-          title: Padding(
-            padding: EdgeInsets.symmetric(vertical: 20.dy)
-                .copyWith(left: leadingIcon == watchIcon ? 0 : 10.dx),
-            child: AppText(
-              isStartAligned: true,
-              text: title,
-              fontSize: 16.sp,
-              fontWeight: FontWeight.w500,
-            ),
-          ),
-          trailing: trailingIcon != null
-              ? trailingIcon!
-              : SvgAsset(assetName: arrowRight),
+      child: ListTile(
+        onTap: onTap,
+        leading: SvgAsset(assetName: leadingIcon),
+        titleAlignment: ListTileTitleAlignment.center,
+        contentPadding: EdgeInsets.symmetric(horizontal: 15.dx),
+        tileColor: appColors.white,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(18),
         ),
+        title: Padding(
+          padding: EdgeInsets.symmetric(vertical: 20.dy)
+              .copyWith(left: leadingIcon == watchIcon ? 0 : 10.dx),
+          child: AppText(
+            isStartAligned: true,
+            text: title,
+            fontSize: 16.sp,
+            fontWeight: FontWeight.w500,
+          ),
+        ),
+        trailing: trailingIcon != null
+            ? trailingIcon!
+            : SvgAsset(assetName: arrowRight),
       ),
     );
   }
