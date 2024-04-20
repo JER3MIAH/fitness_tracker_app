@@ -18,7 +18,7 @@ class OnboardingScreen extends HookWidget {
     final pageController = usePageController(initialPage: currentPage.value);
 
     return Scaffold(
-      backgroundColor: Colors.grey.shade200,
+      backgroundColor: appColors.lightGrey,
       body: Stack(
         children: [
           Container(

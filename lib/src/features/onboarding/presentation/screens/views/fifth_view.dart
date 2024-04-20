@@ -38,7 +38,6 @@ class FifthView extends ConsumerWidget {
                 ref
                     .read(onboardingProvider.notifier)
                     .selectWorkoutGoal(workoutGoals[index]);
-                print(selectedWorkoutGoals);
               },
             ),
           ),

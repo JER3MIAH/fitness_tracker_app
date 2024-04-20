@@ -1,3 +1,4 @@
+import 'package:fitness_tracker_app/src/shared/shared.dart';
 import 'package:flutter/material.dart';
 
 class ExploreView extends StatelessWidget {
@@ -6,8 +7,9 @@ class ExploreView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: AppBar(
-        title: const Text('Explore View'),
+      backgroundColor: appColors.lightGrey,
+      body: Column(
+        children: [],
       ),
     );
   }

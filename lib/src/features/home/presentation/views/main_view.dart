@@ -22,6 +22,7 @@ class MainView extends HookWidget {
     ];
 
     return Scaffold(
+      backgroundColor: appColors.lightGrey,
       body: IndexedStack(
         index: selectedIndex.value,
         children: pages,
@@ -37,7 +38,7 @@ class MainView extends HookWidget {
               selectedIndex.value = value;
             },
             enableFeedback: false,
-            backgroundColor: appColors.white.withAlpha(12),
+            backgroundColor: appColors.white,
             type: BottomNavigationBarType.fixed,
             selectedItemColor: appColors.green,
             unselectedItemColor: appColors.black,

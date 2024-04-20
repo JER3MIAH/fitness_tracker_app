@@ -68,4 +68,5 @@ class AppColors {
   Color error = const Color(0xFFC11717);
   Color success = const Color(0xFF09A160);
   Color grey80 = const Color(0xFF808080);
+  Color lightGrey = Colors.grey.shade300;
 }
