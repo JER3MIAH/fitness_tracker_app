@@ -1,5 +1,6 @@
 import 'package:fitness_tracker_app/src/shared/shared.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class AppText extends StatelessWidget {
   final TextStyle? textStyle;
@@ -28,11 +29,10 @@ class AppText extends StatelessWidget {
         Text(
           text,
           style: textStyle ??
-              TextStyle(
+              GoogleFonts.inter(
                 fontSize: fontSize ?? 18.sp,
                 fontWeight: fontWeight ?? FontWeight.normal,
                 color: color,
-                overflow: TextOverflow.ellipsis,
                 decoration: isDecorated ? TextDecoration.underline : null,
                 decorationColor: isDecorated ? appColors.yellow : null,
               ),

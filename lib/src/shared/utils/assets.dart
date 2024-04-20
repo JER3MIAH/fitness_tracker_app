@@ -36,5 +36,11 @@ final String statsOutlined = 'stats-outlined'.svg;
 final String statsFilled = 'stats-filled'.svg;
 final String settingsOutlined = 'settings-outlined'.svg;
 final String settingsFilled = 'settings-filled'.svg;
+//Settings screen
+final String drawerIcon = 'drawer-icon'.svg;
+final String globeIcon = 'globe-icon'.svg;
+final String watchIcon = 'watch-icon'.svg;
+final String themeIcon = 'theme-icon'.svg;
+
 //? PNGS
 final String sparkleEffectSmall = 'sparkle-effect-small'.png;
