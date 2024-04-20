@@ -1,11 +1,7 @@
 import 'package:fitness_tracker_app/src/features/statistics/presentation/views/logs.dart';
 import 'package:fitness_tracker_app/src/features/statistics/presentation/views/progress_report.dart';
 import 'package:fitness_tracker_app/src/shared/shared.dart';
-import 'package:flutter/cupertino.dart';
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
-import 'package:flutter/widgets.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:google_fonts/google_fonts.dart';
 

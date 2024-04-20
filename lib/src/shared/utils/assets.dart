@@ -41,11 +41,13 @@ final String drawerIcon = 'drawer-icon'.svg;
 final String globeIcon = 'globe-icon'.svg;
 final String watchIcon = 'watch-icon'.svg;
 final String themeIcon = 'theme-icon'.svg;
-//Explore
+//Statistics
 final String selector = 'selector'.svg;
 final String calendarIcon = 'calendar-icon'.svg;
 final String caloriesBurned = 'calories-burned'.svg;
 final String historyWeight = 'history-weight'.svg;
+//Explore
+final String timerIcon = 'timer-icon'.svg;
 
 //? PNGS
 final String sparkleEffectSmall = 'sparkle-effect-small'.png;
