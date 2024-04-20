@@ -44,6 +44,8 @@ final String themeIcon = 'theme-icon'.svg;
 //Explore
 final String selector = 'selector'.svg;
 final String calendarIcon = 'calendar-icon'.svg;
+final String caloriesBurned = 'calories-burned'.svg;
+final String historyWeight = 'history-weight'.svg;
 
 //? PNGS
 final String sparkleEffectSmall = 'sparkle-effect-small'.png;

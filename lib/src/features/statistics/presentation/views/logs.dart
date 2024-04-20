@@ -1,3 +1,4 @@
+import 'package:fitness_tracker_app/src/shared/shared.dart';
 import 'package:flutter/cupertino.dart';
 
 class Logs extends StatelessWidget {
@@ -5,6 +6,26 @@ class Logs extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return SingleChildScrollView(
+      child: Padding(
+        padding: EdgeInsets.symmetric(horizontal: 15.dx),
+        child: Column(
+          children: [
+            SvgAsset(assetName: caloriesBurned),
+            YBox(10.dy),
+            SvgAsset(assetName: historyWeight),
+            YBox(20.dy),
+            SparkleContainer(
+              height: 128.dy,
+              decoration: BoxDecoration(
+                color: appColors.black,
+                borderRadius: BorderRadius.circular(5),
+              ),
+            ),
+            YBox(30.dy),
+          ],
+        ),
+      ),
+    );
   }
 }
