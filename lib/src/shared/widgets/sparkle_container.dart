@@ -36,15 +36,18 @@ class SparkleContainer extends StatelessWidget {
         SizedBox(
           height: height,
           width: width ?? double.infinity,
-          child: SvgPicture.asset(
-            sparkleEffect,
-            fit: fit,
-            colorFilter: isBgWhite
-                ? ColorFilter.mode(
-                    appColors.grey,
-                    BlendMode.srcIn,
-                  )
-                : null,
+          child: Padding(
+            padding: EdgeInsets.symmetric(vertical: 6.dy),
+            child: SvgPicture.asset(
+              sparkleEffect,
+              fit: fit,
+              colorFilter: isBgWhite
+                  ? ColorFilter.mode(
+                      appColors.grey,
+                      BlendMode.srcIn,
+                    )
+                  : null,
+            ),
           ),
         ),
       ],

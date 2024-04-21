@@ -1,3 +1,6 @@
+import 'package:fitness_tracker_app/src/features/explore/presentation/views/explore_workouts.dart';
+import 'package:fitness_tracker_app/src/features/explore/presentation/views/my_workout.dart';
+import 'package:fitness_tracker_app/src/features/explore/presentation/views/nutrition.dart';
 import 'package:fitness_tracker_app/src/shared/shared.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
@@ -45,9 +48,9 @@ class ExploreView extends HookWidget {
                 isLastPage.value = (value == 2);
               },
               children: const [
-                Placeholder(),
-                Placeholder(),
-                Placeholder(),
+                ExploreWorkouts(),
+                MyWorkout(),
+                Nutrition(),
               ],
             ),
           ),
@@ -87,8 +90,8 @@ class ExploreView extends HookWidget {
                   isFirstPage
                       ? 'Explore Workouts'
                       : isLastPage
-                          ? ' My Workout '
-                          : '  Nutrition  ',
+                          ? '  Nutrition  '
+                          : ' My Workout ',
                   style: GoogleFonts.inter(
                     fontSize: 16.sp,
                     fontWeight: FontWeight.w500,
