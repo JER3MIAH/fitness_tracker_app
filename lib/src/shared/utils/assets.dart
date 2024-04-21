@@ -57,7 +57,7 @@ final String fireIcon = 'fire-icon'.svg;
 final String stepsIcon = 'steps-icon'.svg;
 final String weightIcon = 'weight-icon'.svg;
 final String foodIcon = 'food-icon'.svg;
-final String addIcon = 'add-icon'.svg;
+final String addIcon = 'addIcon'.svg;
 final String doublePlay = 'double-play'.svg;
 final String nrcIcon = 'nrc'.svg;
 
