@@ -48,6 +48,18 @@ final String caloriesBurned = 'calories-burned'.svg;
 final String historyWeight = 'history-weight'.svg;
 //Explore
 final String timerIcon = 'timer-icon'.svg;
+//Home
+final String stagChart = 'stag-chart'.svg;
+final String dailyCal = 'daily-cal'.svg;
+final String dailySteps = 'dailty-steps'.svg;
+final String weightChart = 'weight-chart'.svg;
+final String fireIcon = 'fire-icon'.svg;
+final String stepsIcon = 'steps-icon'.svg;
+final String weightIcon = 'weight-icon'.svg;
+final String foodIcon = 'food-icon'.svg;
+final String addIcon = 'add-icon'.svg;
+final String doublePlay = 'double-play'.svg;
+final String nrcIcon = 'nrc'.svg;
 
 //? PNGS
 final String sparkleEffectSmall = 'sparkle-effect-small'.png;

@@ -23,34 +23,34 @@ class SparkleContainer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Stack(
-      children: [
-        Container(
-          height: height,
-          width: width ?? double.infinity,
-          decoration: decoration,
-          padding: padding,
-          margin: margin,
-          child: child,
-        ),
-        SizedBox(
-          height: height,
-          width: width ?? double.infinity,
-          child: Padding(
-            padding: EdgeInsets.symmetric(vertical: 6.dy),
-            child: SvgPicture.asset(
-              sparkleEffect,
-              fit: fit,
-              colorFilter: isBgWhite
-                  ? ColorFilter.mode(
-                      appColors.grey,
-                      BlendMode.srcIn,
-                    )
-                  : null,
+    return Container(
+      height: height,
+      width: width ?? double.infinity,
+      decoration: decoration,
+      padding: padding,
+      margin: margin,
+      child: Stack(
+        children: [
+          SizedBox(
+            height: height,
+            width: width ?? double.infinity,
+            child: Padding(
+              padding: EdgeInsets.symmetric(vertical: 6.dy),
+              child: SvgPicture.asset(
+                sparkleEffect,
+                fit: fit,
+                colorFilter: isBgWhite
+                    ? ColorFilter.mode(
+                        appColors.grey,
+                        BlendMode.srcIn,
+                      )
+                    : null,
+              ),
             ),
           ),
-        ),
-      ],
+          child ?? const SizedBox.shrink(),
+        ],
+      ),
     );
   }
 }
