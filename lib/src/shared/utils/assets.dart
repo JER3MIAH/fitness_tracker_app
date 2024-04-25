@@ -46,6 +46,11 @@ final String selector = 'selector'.svg;
 final String calendarIcon = 'calendar-icon'.svg;
 final String caloriesBurned = 'calories-burned'.svg;
 final String historyWeight = 'history-weight'.svg;
+final String kgIcon = 'kgIcon'.svg;
+final String diagonalArrows = 'diagonalArrows'.svg;
+final String footsteps = 'footsteps'.svg;
+final String stepProgress = 'stepProgress'.svg;
+final String weightLossGraph = 'weightLossGraph'.svg;
 //Explore
 final String timerIcon = 'timer-icon'.svg;
 //Home

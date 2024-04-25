@@ -27,7 +27,6 @@ class SparkleContainer extends StatelessWidget {
       height: height,
       width: width ?? double.infinity,
       decoration: decoration,
-      padding: padding,
       margin: margin,
       child: Stack(
         children: [
@@ -48,7 +47,10 @@ class SparkleContainer extends StatelessWidget {
               ),
             ),
           ),
-          child ?? const SizedBox.shrink(),
+          Padding(
+            padding: padding ?? const EdgeInsets.all(0),
+            child: child ?? const SizedBox.shrink(),
+          ),
         ],
       ),
     );
