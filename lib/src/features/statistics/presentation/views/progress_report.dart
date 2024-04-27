@@ -348,8 +348,31 @@ Widget bmiContainer() {
             )
           ],
         ),
-        YBox(18.dy),
-        const Spacer(),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.end,
+          children: [
+            Container(
+              width: 34.dx,
+              height: 15.dy,
+              decoration: BoxDecoration(
+                color: appColors.yellow,
+                borderRadius: BorderRadius.circular(12),
+              ),
+              child: Center(
+                child: AppText(
+                  text: '88.8kg',
+                  fontSize: 7.sp,
+                  fontWeight: FontWeight.w400,
+                  color: appColors.black,
+                ),
+              ),
+            ),
+            SizedBox(
+              width: 94.dx,
+            ),
+          ],
+        ),
+        YBox(5.dy),
         Row(
           children: [
             _bmiLine(),
