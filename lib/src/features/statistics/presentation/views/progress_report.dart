@@ -196,17 +196,7 @@ class ProgressReport extends StatelessWidget {
               ),
             ),
             YBox(30.dy),
-            SparkleContainer(
-              height: 128.dy,
-              decoration: BoxDecoration(
-                color: appColors.black,
-                borderRadius: BorderRadius.circular(5),
-              ),
-              child: AppText(
-                text: 'Yooooooooooo',
-                color: appColors.white,
-              ),
-            ),
+            bmiContainer(),
             YBox(30.dy),
           ],
         ),
@@ -335,4 +325,84 @@ class ProgressReport extends StatelessWidget {
       ],
     );
   }
+}
+
+Widget bmiContainer() {
+  return SparkleContainer(
+    height: 128.dy,
+    padding: EdgeInsets.symmetric(horizontal: 10.dx, vertical: 15.dy),
+    decoration: BoxDecoration(
+      color: appColors.black,
+      borderRadius: BorderRadius.circular(12),
+    ),
+    child: Column(
+      children: [
+        Row(
+          children: [
+            SvgAsset(assetName: weightIcon),
+            AppText(
+              text: ' BMI',
+              color: appColors.white,
+              fontSize: 16.sp,
+              fontWeight: FontWeight.w600,
+            )
+          ],
+        ),
+        YBox(18.dy),
+        const Spacer(),
+        Row(
+          children: [
+            _bmiLine(),
+            _bmiLine(color: appColors.green, num: 73),
+            _bmiLine(width: 32.dx, color: appColors.yellow, num: 88),
+            _bmiLine(width: 91.dx, color: Colors.orange, num: 100),
+          ],
+        ),
+        const Spacer(),
+        Row(
+          children: [
+            Container(
+              height: 10.dx,
+              width: 10.dx,
+              decoration: BoxDecoration(
+                shape: BoxShape.circle,
+                color: appColors.green,
+              ),
+            ),
+            AppText(
+              text: ' Healthy weight',
+              color: appColors.white,
+              fontSize: 15.sp,
+              fontWeight: FontWeight.w500,
+            )
+          ],
+        )
+      ],
+    ),
+  );
+}
+
+Widget _bmiLine({double? width, Color? color, int? num}) {
+  return Column(
+    children: [
+      SparkleContainer(
+        width: width ?? 99.dx,
+        height: 7.dy,
+        isBgWhite: color == appColors.white,
+        decoration: BoxDecoration(
+          color: color ?? appColors.white,
+          borderRadius: BorderRadius.circular(12),
+        ),
+      ),
+      YBox(4.dy),
+      Text(
+        '${num ?? 50}',
+        style: GoogleFonts.inter(
+          fontSize: 10.sp,
+          fontWeight: FontWeight.w400,
+          color: appColors.white,
+        ),
+      )
+    ],
+  );
 }

@@ -1,3 +1,4 @@
+import 'package:fitness_tracker_app/src/features/statistics/presentation/views/progress_report.dart';
 import 'package:fitness_tracker_app/src/shared/shared.dart';
 import 'package:flutter/cupertino.dart';
 
@@ -15,13 +16,7 @@ class Logs extends StatelessWidget {
             YBox(10.dy),
             SvgAsset(assetName: historyWeight),
             YBox(20.dy),
-            SparkleContainer(
-              height: 128.dy,
-              decoration: BoxDecoration(
-                color: appColors.black,
-                borderRadius: BorderRadius.circular(5),
-              ),
-            ),
+            bmiContainer(),
             YBox(30.dy),
           ],
         ),

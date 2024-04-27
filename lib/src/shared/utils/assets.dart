@@ -51,6 +51,7 @@ final String diagonalArrows = 'diagonalArrows'.svg;
 final String footsteps = 'footsteps'.svg;
 final String stepProgress = 'stepProgress'.svg;
 final String weightLossGraph = 'weightLossGraph'.svg;
+final String bmiLine = 'bmiLine'.svg;
 //Explore
 final String timerIcon = 'timer-icon'.svg;
 //Home
