@@ -54,6 +54,7 @@ final String weightLossGraph = 'weightLossGraph'.svg;
 final String bmiLine = 'bmiLine'.svg;
 //Explore
 final String timerIcon = 'timer-icon'.svg;
+final String nutrientCycle = 'nutientCycle'.svg;
 //Home
 final String stagChart = 'stag-chart'.svg;
 final String dailyCal = 'daily-cal'.svg;
