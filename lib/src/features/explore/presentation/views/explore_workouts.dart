@@ -1,3 +1,4 @@
+import 'package:fitness_tracker_app/src/features/explore/presentation/views/my_workout.dart';
 import 'package:fitness_tracker_app/src/shared/shared.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -28,6 +29,10 @@ class ExploreWorkouts extends StatelessWidget {
                 color: appColors.black,
                 borderRadius: BorderRadius.circular(10),
               ),
+              child: workoutContContent(
+                topText: 'CARDIO\n',
+                bottomText: 'EXCERCISES',
+              ),
             ),
             _buildText('Strength Training'),
             SparkleContainer(
@@ -37,6 +42,11 @@ class ExploreWorkouts extends StatelessWidget {
                 color: appColors.white,
                 borderRadius: BorderRadius.circular(10),
               ),
+              child: workoutContContent(
+                isBgWhite: true,
+                topText: 'STRENGTH\n',
+                bottomText: 'TRAINING',
+              ),
             ),
             _buildText('HIIT'),
             SparkleContainer(
@@ -44,6 +54,10 @@ class ExploreWorkouts extends StatelessWidget {
               decoration: BoxDecoration(
                 color: appColors.green,
                 borderRadius: BorderRadius.circular(10),
+              ),
+              child: workoutContContent(
+                topText: 'HIIT\n',
+                bottomText: 'EXCERCISES',
               ),
             ),
             YBox(30.dy),
