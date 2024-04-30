@@ -55,6 +55,8 @@ final String bmiLine = 'bmiLine'.svg;
 //Explore
 final String timerIcon = 'timer-icon'.svg;
 final String nutrientCycle = 'nutientCycle'.svg;
+final String quickBurst = 'quickBurst'.svg;
+final String excersiceSet = 'excersiceSet'.svg;
 //Home
 final String stagChart = 'stag-chart'.svg;
 final String dailyCal = 'daily-cal'.svg;
