@@ -1,16 +1,28 @@
-# fitness_tracker_app
+# Wemove Fitness Tracker App
 
-A new Flutter project.
 
-## Getting Started
+## Table of contents
 
-This project is a starting point for a Flutter application.
+- [Screenshot](#screenshots)
+- [Built with](#built-with)
+- [Acknowledgements](#acknowledgements)
 
-A few resources to get you started if this is your first Flutter project:
+### Screenshots
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+<img src="./assets/screenshots/screenshot1.jpg" width="100" alt="onboarding" /> <img src="./assets/screenshots/screenshot2.jpg" width="100" alt="onboarding" /> <img src="./assets/screenshots/screenshot3.jpg" width="100" alt="onboarding" />  <img src="./assets/screenshots/screenshot4.jpg" width="100" alt="onboarding" />
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<img src="./assets/screenshots/screenshot5.jpg" width="100" alt="onboarding" /> <img src="./assets/screenshots/screenshot6.jpg" width="100" alt="dashboard" /> <img src="./assets/screenshots/screenshot7.jpg" width="100" alt="dashboard" /> <img src="./assets/screenshots/screenshot8.jpg" width="100" alt="services" />
+
+
+### Built with
+
+- Flutter
+- Dart
+- Riverpod for State Management
+- GetX for Navigation
+
+### Acknowledgements
+
+- **Design**: The design for this app was created by [The Nosk](https://www.behance.net/thenoskshade).
+
+- **Development**: The app was developed by [Jeremiah](https://github.com/JER3MIAH).
